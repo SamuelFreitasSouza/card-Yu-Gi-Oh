@@ -1,0 +1,41 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+
+.flipper{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.container:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.Card1, .Card2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.Card2{
+    transform: rotateY(180deg);
+}
+
+
+img{
+    width: 30%;
+}
